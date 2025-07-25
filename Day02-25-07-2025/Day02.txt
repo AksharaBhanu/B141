@@ -1,0 +1,28 @@
+click on google link
+
+webelement- any object present on the page (textbox button radio image link listbox )
+is created using html --> hyper text markup language
+
+tag
+attribute
+text
+
+before performing any action (click type select.....) we need to find the element
+
+ways-- locators--8 locators
+
+1. tag name
+2. id
+3. name
+4. class name
+5. link text
+6. partial link text
+7. cssSelector
+8. xpath
+
+name
+ find element method search in html tree--> top to bottom
+
+if locator is not matching with any of the element present on the page then we get NoSuchElementException
+
+if the locator is matching with multiple elements then findelement picks the first one

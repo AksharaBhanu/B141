@@ -1,0 +1,24 @@
+File-> settings--> project--> interpreter --> + --> selenium --> install
+cmd--> pip install selenium 
+
+Selenium --> Free and Open Source Web App Test Automation tool
+Free--> no need to pay 
+Open Source --> we can see source code, we can download it , we can customize , sell it
+Web App--> any app open using Browser --> MFF, MS Edge G chrome , Safari
+OS--> all OS
+Test Automation--> automatically test the app 
+tool--> Software
+----> Appium --> Mobile App   , RestAssure --API Testing Jmeter 
+
+-->12 diff
+ 
+WebDriver methods
+1. get
+2. maximize_window
+3. fullscreen_window
+4. minimize_window
+5. close
+6. back
+7. forward
+8. refresh
+9. quit
