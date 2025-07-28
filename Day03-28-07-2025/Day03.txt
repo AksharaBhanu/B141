@@ -1,0 +1,35 @@
+<a id="a1" name="n1" class="c1" title="click me" href="http://www.google.com">Google</a>
+
+tagname----duplicate
+id
+name
+class name----duplicate
+		link text
+		partial link text
+
+
+cssSelector
+xpath
+
+pointofsale
+<input class="form-control" id="input-username" name="username" type="text" placeholder="Username">
+
+<input class="form-control" id="input-password" name="password" type="password" placeholder="Password">
+
+<button class="btn btn-lg btn-primary" name="login-button" type="submit">Go</button>
+
+cssSelector--> Cascading Style Sheets
+syntax:  tag[attributeName='attributeValue']
+
+<input class="form-control" id="input-username" name="username" type="text" placeholder="Username">
+---> 
+
+input[id='input-username']
+input[name='username']
+input[name='username']
+input[type='text']
+input[placeholder='Username']
+
+Assignment
+login to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login using only cssSelector
+
