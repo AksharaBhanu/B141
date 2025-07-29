@@ -1,0 +1,130 @@
+<a id="a1" name="n1" class="c1" title="click me" href="http://www.google.com">Google</a>
+
+tag[AN='AV']
+
+a[id='a1']
+a[name='n1']
+a[class='c1']
+a[title='click me']
+a[href='http://www.google.com']
+
+we cant use text in cssSelector
+
+we have 2 short cuts
+#---> id
+.----> class
+a[id='a1']--> a#a1--> #a1
+a[#='a1']XXXXXXX
+
+a[class='c1']---> a.c1
+
+<button class="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button">
+button[class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']
+
+button.oxd-button.oxd-button--medium.oxd-button--main.orangehrm-login-button
+
+button.orangehrm-login-button
+
+xpath
+--> path of the element in html tree 
+
+./html/body/a
+
+.---> root element parent of html
+/html/body/a
+/html/body/a
+
+/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]
+
+full xpath --> absolute xpath
+
+relative xpath 
+
+
+/--> child
+./--> child of the root --> html
+.// 
+
+
+tag[AN='AV']--cssSelector
+
+//tag[@AN='AV']--xpath with attribute
+
+<input type="text" value="A">
+
+/html/body/div[1]/input[1]---> absolute xpath
+//input[@value='A']--> relative xpath
+
+//tag[@AN='AV']
+<a id="a1" name="n1" class="c1" title="click me" href="http://www.google.com">Google</a>
+//a[@id='a1']
+//a[@name='n1']
+//a[@class='c1']
+//a[@title='click me']
+//a[@href='http://www.google.com']
+
+//tag[text()='tv']
+//a[text()='Google']
+
+tag name
+id
+name
+cn
+lt
+plt
+cssS
+xpath
+
+logical operator in xpath--> and or not
+//a[@id='a1' and @name='n1']
+//a[@id='a1' or @name='n1']
+
+//a[not(@id='a1')]--> tag should be a and id != 'a1'
+
+contains function
+//tag[contains(arg1,arg2)]  --arg1--> @AN or text()   arg2-->value
+
+//tag[contains(@AN,'av')]
+//tag[contains(text(),'tv')]
+//tag[@AN='AV']
+
+
+
+<img data-v-17f5fb62="" src="/web/images/ohrm_branding.png?v=1721393199309" alt="company-branding">
+
+//img[@alt='company-branding']
+//img[contains(@src,'ohrm_branding')]
+
+when to use contains--> if value is long or dynamic
+
+<h5 data-v-7b563373="" data-v-0af708be="" class="oxd-text oxd-text--h5 orangehrm-login-title">Login</h5>
+
+//h5[text()='Login']
+//h5[contains(@class,'login')]
+
+<p data-v-7b563373="" data-v-0af708be="" class="oxd-text oxd-text--p">Username : Admin</p>
+
+//p[text()='Username : Admin']
+
+//p[contains(text(),'Username')]--> 
+
+.//p[contains(.,'Username')] --> here 1st dot is root element , any dot within [] is text()
+
+<p data-v-7b563373="" data-v-0af708be="" class="oxd-text oxd-text--p">Password : admin123</p>
+//p[contains(.,'Password')]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
