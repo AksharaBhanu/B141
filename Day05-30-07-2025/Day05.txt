@@ -1,0 +1,12 @@
+https://aksharatraining.com/sample4.html
+
+group index
+
+//a[1]--> all the link which has index 1
+(//a)[1]--> the 1st link
+
+(//a)[last()]
+------------------------------------------------
+//th[text()='Subject']/../../..
+
+https://aksharatraining.com/sample5.html
