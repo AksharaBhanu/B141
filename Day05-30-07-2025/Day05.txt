@@ -10,3 +10,12 @@ group index
 //th[text()='Subject']/../../..
 
 https://aksharatraining.com/sample5.html
+
+
+1. inspect independent element and note down its html code
+2. place the mouse pointer on html code of IE and move upward direction (common parent)
+3. note down the path to common parent
+4. use arrow keys to navigate from CP to DE
+5. note down the path from CP to DE
+6. write xpath from ID--> CP--> DE
+
