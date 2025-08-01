@@ -1,0 +1,50 @@
+(//div[@data-tag="The Caribbean"])[2]/div[2]
+
+tag name
+id
+name
+cn
+lt
+plt
+css
+xpath
+
+id--> name --> css--> xpath
+<button class="btn btn-lg btn-primary" name="login-button" type="submit">Go</button>
+
+Assignment: write a script to login to orange hrms app
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+WebElement class methods
+1. send_keys --> to enter input
+2. clear--> to remove the value present in input 
+3. click---> to click on any element
+
+4. is_selected--> check whether checkbox/radio button is selected or not 
+5. is_enabled--> element enabled or disabled
+6. is_displayed--> visible or hidden
+
+
+7. tag_name
+8. get_attribute
+9. text
+
+
+
+<a id="a1" name="n1" class="c1" title="click me" href="http://www.google.com">Google</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
