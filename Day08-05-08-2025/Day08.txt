@@ -1,0 +1,24 @@
+
+WebElement class methods
+1. send_keys --> to enter input
+2. clear--> to remove the value present in input 
+3. click---> to click on any element
+
+4. is_selected--> check whether checkbox/radio button is selected or not 
+5. is_enabled--> element enabled or disabled
+6. is_displayed--> visible or hidden
+
+
+7. tag_name
+8. get_attribute
+9. text
+
+ActionChains class
+1. scroll_by_amount(x,y)
+2. scroll_to_element(element)
+3. move_to_element (mouse hover)
+4. context_click (right click)
+5. double_click
+6. drag_and_drop
+
+7. perform 
