@@ -6,14 +6,6 @@ from selenium.webdriver.common.by import By
 driver=Chrome()
 driver.get("https://aksharatraining.com/sample2.html")
 time.sleep(1)
-# v=driver.find_element(By.XPATH,"//b")
-# print(type(v))
-
-b=driver.find_elements(By.XPATH,"//b")
-print(type(b))
-print(len(b))
-# print(type(b[0]))
-# print(b)
-
-
-
+all_elements=driver.find_elements(By.TAG_NAME,"a")
+for element in all_elements:
+    print(element.get_attribute('href'))

@@ -1,0 +1,16 @@
+	find_element				find_elements
+handle single element				handle multiple elements
+return type: WebElement				list
+	1st matching WebElement			all the matching webelements
+if not match --> NoSuchElementException		empty list	
+
+Select class
+1. listbox drop down combo box
+2. created using <select>
+3. inside the listbox items are created using option
+4. to handle list box we use Select class in selenium
+5. to Select class object we send listbox as argument
+select_by_index
+select_by_value
+select_by_visible_text
+.options

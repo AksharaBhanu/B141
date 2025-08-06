@@ -22,3 +22,7 @@ ActionChains class
 6. drag_and_drop
 
 7. perform 
+
+https://applitools.com/  for visual testing
+
+
