@@ -1,0 +1,23 @@
+
+Select class
+1. listbox drop down combo box
+2. created using <select>
+3. inside the listbox items are created using option
+4. to handle list box we use Select class in selenium
+5. to Select class object we send listbox as argument
+
+select_by_index
+select_by_value
+select_by_visible_text
+
+options #get all the options present in list  box 
+all_selected_options #get only the selected options present in list  box 
+
+
+
+is_multiple
+
+deselect_by_index
+deselect_by_value
+deselect_by_visible_text
+deselect_all
