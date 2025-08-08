@@ -1,0 +1,9 @@
+Popups
+1. Alert
+2. html 
+3. file upload (file download)
+4. 
+
+close  --> closes current browser--> session remains 
+quit --> closes all the browser --> session ends
+
