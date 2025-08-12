@@ -1,0 +1,13 @@
+Selenium will be faster than the app--> we get NSEE
+we slow down the selenium --> time.sleep(1)
+
+match selenium speed with app--> synchronization
+
+time.sleep(10)--> blind wait 
+
+implicitly_wait(10)-- dynamic wait
+
+used by all find_element and find_elements methods
+
+what is the diff b/w IW & EW
+https://saucelabs.com/
