@@ -1,0 +1,8 @@
+1.create new Python Project  - e.g BDD
+2. Add/Install packages - Selenium, Pytest, Pytest-BDD (File >> Settings >> Project)
+3. Create 2 packages - Features, Steps
+4. Install the plug-in - Gherkins (File >> Settings >> plugins)
+5. Inside features folder - create all the dot feature files (e.g login.features)
+6. Inside Steps folder - create all the dot py files (e.g test_login.py) --- Note: In the pytest file name should and function name should start with 'test'
+7. To quickly generate outline python code (dummy code) for the require feature file use below command
+"pytest-bdd generate login.feature"

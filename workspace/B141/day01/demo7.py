@@ -1,7 +1,7 @@
 import time
-from selenium.webdriver import Chrome
+from selenium.webdriver import Firefox
 
-driver=Chrome() #open edge browser
+driver=Firefox() #open edge browser
 driver.get("http://www.google.com") #enter the url
 time.sleep(8)
 driver.maximize_window()

@@ -1,0 +1,17 @@
+Automation Framework
+Record and playback
+keyword framework
+module driven
+data driven
+Page object model
+Robot framework
+BDD --Cucumber 
+
+Gherkin
+Feature 
+	Scenario
+		Given--pre condition
+		When-- steps
+		Then-- expected
+pytest --> executions
+pytest-bdd--> 
