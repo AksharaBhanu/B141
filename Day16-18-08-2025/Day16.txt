@@ -1,0 +1,11 @@
+to avoid specifying path of feature file 
+1. create a file under project--> pytest.ini
+2. inside the file specify 
+
+[pytest]
+bdd_features_base_dir=features
+
+
+
+pytest -vs --> runs all the tests
+pytest -vs steps/test_f2.py--> runs specific test
