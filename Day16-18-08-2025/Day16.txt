@@ -9,3 +9,17 @@ bdd_features_base_dir=features
 
 pytest -vs --> runs all the tests
 pytest -vs steps/test_f2.py--> runs specific test
+
+
+parameterize steps?
+yes use parsers
+
+parsers.parse('user enters {url}')
+
+to run the same scenario with diff test data we use 
+Scenario Outline
+it must have examples 
+in the steps use <coulumnname>
+
+
+to run same steps before every scenario use Background

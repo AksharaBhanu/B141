@@ -1,0 +1,40 @@
+how to share the common function between multiple scenarios
+to send data from one function and receive it in next function we use 
+target_fixture
+
+3 files
+1. .feature --> Gherkin
+2. steps/.py--> Given When Then functions
+3. tests/ .py --> test 
+---------------------------------------------------
+How to convert manual test case in to automation script using BDD cucumber framework
+
+Test Case: Valid Login
+precondition: Login Page
+Steps:
+	enter valid username
+	enter valid password
+	click on go button
+	verify that home page is displayed
+
+-----------------------------------------------------
+execute the test case manually once (system study) 
+while executing note down page element and action
+page		element		action
+LoginPage 	username	enter
+LoginPage	password	enter
+LoginPage	gobutton	click
+HomewPage	logout 		verify displayed
+
+--------------------------------------------------------
+create feature file
+create steps
+create test
+---------------------------------------------------------
+
+
+
+
+
+
+

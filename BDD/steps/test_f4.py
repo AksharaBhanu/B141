@@ -10,15 +10,6 @@ def test_valid_login():
     print("""valid login.""")
 
 
-@given('browser is ready')
-def f1():
-    print("""browser is redy.""")
-    
-@when('user enters url')
-def f5():
-    print("""user enters url.""")
-
-
 
 @given('login page is displayed')
 def f2():
@@ -32,8 +23,9 @@ def f3(un,pw):
     
 
 @then('home page is displayed')
-def f7():
+def f7(ph):
     print("""home page is displayed.""")
+    print(ph)
 
 @then('err page is displayed')
 def f6():
