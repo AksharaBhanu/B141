@@ -3,9 +3,9 @@ Feature: login functionality of POS application
     Given user opens the chrome browser
     When user enters the url
 
-  Scenario: Valid Login
+  Scenario: Invalid Login
     Given login page is displayed
-    When user enter admin username
-    And user enter pointofsale password
+    When user enter abc username
+    And user enter xyz password
     And user clicks on go button
-    Then Home Page is displayed
+    Then ErrMsg is displayed

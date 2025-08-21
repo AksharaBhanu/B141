@@ -1,9 +1,5 @@
-from pytest_bdd import (
-    given,
-    scenario,
-    then,
-    when,
-)
+from pytest_bdd import given,when,parsers,then
+
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
 
@@ -16,14 +12,12 @@ def login_page(driver):
     assert 'Login' in title
 
 
-    
-
-@when('user enter valid username')
-def enter_username(driver:Chrome):
+@when(parsers.parse('user enter {type} username'))
+def enter_username(driver:Chrome,type):
     print("""user enter valid username.""")
-    driver.find_element(By.ID,"input-username").send_keys("admin")
+    driver.find_element(By.ID,"input-username").send_keys(type)
 
-@when('user enter valid password')
+@when(parsers.parse('user enter {type} password'))
 def enter_password(driver:Chrome):
     print("""user enter valid password.""")
     driver.find_element(By.NAME,"password").send_keys("pointofsale")
@@ -32,6 +26,12 @@ def enter_password(driver:Chrome):
 def click_go_button(driver:Chrome):
     print("""user clicks on go button.""")
     driver.find_element(By.NAME,"login-button").click()
+
+@then('ErrMsg is displayed')
+def verify_errormsg(driver:Chrome):
+    print("ErrMsg is displayed")
+    assert driver.find_element(By.CSS_SELECTOR,"div.error").is_displayed()
+    print('ERR MSG IS:',driver.find_element(By.CSS_SELECTOR,"div.error").text)
 
 
 

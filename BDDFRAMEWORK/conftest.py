@@ -1,3 +1,4 @@
+import pytest
 from pytest_bdd import given, when
 from selenium.webdriver import Chrome
 
@@ -13,3 +14,8 @@ def open_browser():
 def ener_url(driver):
     print("""user enters the url.""")
     driver.get("https://pos.aksharatraining.in/pos/public/#")
+
+def pytest_bdd_after_scenario(request, feature, scenario):
+    print('closing the browser')
+    driver = request.getfixturevalue("driver")
+    driver.quit()

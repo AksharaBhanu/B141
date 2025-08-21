@@ -1,0 +1,19 @@
+in BDD - to open the browser we used background but it works only before the scenario
+there is no option to run after the scenario (in .fixture file)
+we handle it by code
+
+1. create a function inside conftest.py
+2. function name must be pytest_bdd_after_scenario 
+3. it must take 3 arg request, feature, scenario
+4. to get the driver object which is stored in target_fixture we must use  
+ request.getfixturevalue("driver")
+
+https://pytest-bdd.readthedocs.io/en/5.0.0/
+
+in bdd---> we have few functions which gets executed automatically --hooks
+pytest_bdd_before_scenario
+pytest_bdd_after_scenario
+pytest_bdd_before_step
+pytest_bdd_after_step
+pytest_bdd_step_error
+all the above hooks must be specified in conftest.py only
