@@ -1,0 +1,11 @@
+user opens the chrome browser.
+user enters the url.
+login page is displayed.
+title is: AkaPOS | OSPOS | Login
+user enter ab username.
+user enter cd password.
+user clicks on go button.
+ErrMsg is displayed
+ERR MSG IS: Invalid username and/or password.
+closing the browser
+Invalid Login scenario completed

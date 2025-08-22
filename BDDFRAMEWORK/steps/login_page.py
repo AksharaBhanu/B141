@@ -14,13 +14,13 @@ def login_page(driver):
 
 @when(parsers.parse('user enter {type} username'))
 def enter_username(driver:Chrome,type):
-    print("""user enter valid username.""")
+    print(f"""user enter {type} username.""")
     driver.find_element(By.ID,"input-username").send_keys(type)
 
 @when(parsers.parse('user enter {type} password'))
-def enter_password(driver:Chrome):
-    print("""user enter valid password.""")
-    driver.find_element(By.NAME,"password").send_keys("pointofsale")
+def enter_password(driver:Chrome,type):
+    print(f"""user enter {type} password.""")
+    driver.find_element(By.NAME,"password").send_keys(type)
 
 @when('user clicks on go button')
 def click_go_button(driver:Chrome):

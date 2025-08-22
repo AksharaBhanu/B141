@@ -1,0 +1,21 @@
+to run the scenario multiple times with diff data we use scenario outline
+
+by default it will execute the tests based on alphatical order 
+pip install pytest-order
+
+above the @scenarion in .py file 
+
+
+@pytest.mark.order(1)
+
+pip install allure-pytest
+
+
+run below cmd to run the script and generate report
+pytest --alluredir=reports/allure-results
+
+
+run below cmd to open the html report
+allure serve reports/allure-results
+
+https://github.com/allure-framework/allure2/releases/download/2.34.1/allure-2.34.1.zip

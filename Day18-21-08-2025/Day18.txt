@@ -17,3 +17,24 @@ pytest_bdd_before_step
 pytest_bdd_after_step
 pytest_bdd_step_error
 all the above hooks must be specified in conftest.py only
+
+
+
+Test Case: InValid Login
+precondition: Login Page
+Steps:
+	enter invalid username
+	enter invalid password
+	click on go button
+	verify that err msg is displayed
+
+execute the test case manually once (system study) 
+while executing note down page element and action
+page		element		action
+LoginPage	username	enter
+LoginPage	password	enter
+LoginPage	go		click
+LoginPage	errmsg		displayed
+
+
+

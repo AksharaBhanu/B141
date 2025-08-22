@@ -1,0 +1,10 @@
+user opens the chrome browser.
+user enters the url.
+login page is displayed.
+title is: AkaPOS | OSPOS | Login
+user enter admin username.
+user enter pointofsale password.
+user clicks on go button.
+Home Page is displayed.
+closing the browser
+Valid Login scenario completed
